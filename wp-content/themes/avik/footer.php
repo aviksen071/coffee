@@ -9,6 +9,7 @@
                   <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                   <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                </ul>
+               hello
             </div>
             <div class="location_text">
                <ul>
