@@ -34,29 +34,30 @@
    <div class="header_section">
       <div class="container">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="<?php echo get_field('site_logo', 'option'); ?>"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                     <a class="nav-link" href="index.html">Home</a>
+                     <a class="nav-link" href="<?php echo home_url();  ?>">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
+                     <a class="nav-link" href="<?php echo home_url('/about');  ?>">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="coffees.html">Coffees</a>
+                     <a class="nav-link" href="<?php echo home_url('/coffee');  ?>">Coffees</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="shop.html">Shop</a>
+                     <!-- <a class="nav-link" href="<?php  //echo home_url(  );  
+                                                      ?>">Shop</a> -->
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="blog.html">Blog</a>
+                     <a class="nav-link" href="<?php echo home_url('/blog');  ?>">Blog</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact</a>
+                     <a class="nav-link" href="<?php echo home_url('/contact');  ?>">Contact</a>
                   </li>
                </ul>
                <form class="form-inline my-2 my-lg-0">

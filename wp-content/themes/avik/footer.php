@@ -4,10 +4,17 @@
          <div class="col-md-12">
             <div class="footer_social_icon">
                <ul>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <?php
+                  if (have_rows('site_icons', 'option')):
+                     while (have_rows('site_icons', 'option')): the_row();
+                        $icon = get_sub_field('social_logo');
+                        $link = get_sub_field('social_url');
+                  ?>
+                        <li><a href="<?php echo $link; ?>" target="_blank"><?php echo $icon; ?></a></li>
+                  <?php
+                     endwhile;
+                  endif;
+                  ?>
                </ul>
             </div>
             <div class="location_text">

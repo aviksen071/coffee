@@ -16,14 +16,14 @@ get_header(); ?>
                <div class="row">
                   <div class="col-md-6"> 
                      <div class="about_taital_box">
-                        <h1 class="about_taital">About Our shop</h1>
-                        <h1 class="about_taital_1">Coffee distribution '</h1>
-                        <p class=" about_text">has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as oppos</p>
+                        <h1 class="about_taital"><?php   echo get_field('about_head');  ?></h1>
+                        <h1 class="about_taital_1"><?php echo get_field('about_sub_head');  ?></h1>
+                        <p class=" about_text"><?php echo get_field('about_text'); ?></p>
                         <div class="readmore_btn"><a href="#">Read More</a></div>
                      </div>
                   </div>
                   <div class="col-md-6"> 
-                     <div class="image_iman"><img src="<?php get_template_directory_uri(  ); ?>/images/about-img.png" class="about_img"></div>
+                     <div class="image_iman"><img src="<?php echo get_field( 'about_banner' )['url']; ?>" class="about_img"></div>
                   </div>
                </div>
             </div>
